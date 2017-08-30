@@ -1,0 +1,9 @@
+Building superskynet
+
+See doc/readme-qt.rst for instructions on building superskynet QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of superskynet.
+
+See doc/build-*.txt for instructions on building superskynetd,
+the intended-for-services, no-graphical-interface, reference
+implementation of superskynet.

@@ -1,0 +1,2 @@
+debian/bin/superskynetd usr/bin
+src/superskynetd usr/lib/superskynet
