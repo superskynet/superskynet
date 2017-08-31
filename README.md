@@ -2,14 +2,23 @@
 Specifications
 ===========================
 Max Money: 10 billion SSN;
+
 Allocation: POW 8 billion SSN，POS 2 billion SSN (In one hundred years);
+
 Block time: 64 seconds;
+
 Block size: 1 M;
+
 Difficulty retarget: every block;
+
 Stake interest: 0.25% annually;
+
 Min transaction fee: 0.0001 SSN，fees are paid to miners;
+
 Confirmations: 10, pos maturity: 500;
+
 Min stake age: 8 hours, no max age;
+
 P2P port: 11201, RPC port: 11202;
 
 Proof of work spec
