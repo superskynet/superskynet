@@ -1,5 +1,5 @@
 Specifications
-
+==================================
 Max Money: 10 billion SSN;
 
 Allocation: POW 8 billion SSN，POS 2 billion SSN (In one hundred years);
@@ -35,7 +35,7 @@ Max height: no limit for one hundred years;
 superskynet development tree
 
 Development process
-
+==================================
 Developers work in their own trees, then submit pull requests when they think their feature or bug fix is ready.
 
 The patch will be accepted if there is broad consensus that it is a good thing. Developers should expect to rework and resubmit patches if they don't match the project's coding conventions (see coding.txt) or are controversial.
