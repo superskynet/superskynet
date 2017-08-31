@@ -20,12 +20,14 @@ Specifications
 * P2P port: 11201, RPC port: 11202;
 
 
-#####Proof of work spec
+Proof of work spec
+
 * Algo: scrypt;
 * Block reward: after 10 blocks, 0.0001 SSN, no halving;
 * Max height: 50,000 (after this network will not accept PoW);
 
-#####Proof of stake spec
+Proof of stake spec
+
 * Block reward: 0.25% annually, no halving;
 * Max height: no limit for one hundred years;
 
