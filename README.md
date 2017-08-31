@@ -1,8 +1,8 @@
 Specifications
 ==================================
-Max Money: 10 billion SSN;
+*Max Money: 10 billion SSN;
 
-Allocation: POW 8 billion SSN，POS 2 billion SSN (In one hundred years);
+*Allocation: POW 8 billion SSN，POS 2 billion SSN (In one hundred years);
 
 Block time: 64 seconds;
 
