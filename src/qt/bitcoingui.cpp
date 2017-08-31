@@ -130,9 +130,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     QWidget *centralWidget = new QWidget();
     QVBoxLayout *centralLayout = new QVBoxLayout(centralWidget);
-#ifndef Q_OS_MAC
-    centralLayout->addWidget(appMenuBar);
-#endif
+
     centralLayout->addWidget(centralStackedWidget);
 
     setCentralWidget(centralWidget);
@@ -318,11 +316,12 @@ void BitcoinGUI::createActions()
 
 void BitcoinGUI::createMenuBar()
 {
-    // workaround for unity's global menu
-    if (qgetenv("QT_QPA_PLATFORMTHEME") == "appmenu-qt5")
-        appMenuBar = menuBar();
-    else
-        appMenuBar = new QMenuBar();
+#ifdef Q_OS_MAC
+    appMenuBar = new QMenuBar();
+#else
+    appMenuBar = menuBar();
+    appMenuBar->setStyleSheet("QWidget { background: rgb(255,255,255); }");
+#endif
 
     // Configure the menus
     QMenu *file = appMenuBar->addMenu(tr("&File"));
@@ -332,6 +331,7 @@ void BitcoinGUI::createMenuBar()
     file->addAction(verifyMessageAction);
     file->addSeparator();
     file->addAction(quitAction);
+    file->setStyleSheet("QWidget { background: rgb(41,44,48); }");
 
     QMenu *settings = appMenuBar->addMenu(tr("&Settings"));
     settings->addAction(encryptWalletAction);
@@ -340,12 +340,14 @@ void BitcoinGUI::createMenuBar()
     settings->addAction(lockWalletAction);
     settings->addSeparator();
     settings->addAction(optionsAction);
+    settings->setStyleSheet("QWidget { background: rgb(41,44,48); }");
 
     QMenu *help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(openRPCConsoleAction);
     help->addSeparator();
     help->addAction(aboutAction);
     help->addAction(aboutQtAction);
+    help->setStyleSheet("QWidget { background: rgb(41,44,48); }");
 }
 
 static QWidget* makeToolBarSpacer()
