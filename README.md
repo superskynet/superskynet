@@ -17,7 +17,7 @@ Specifications
 * Min transaction fee: 0.0001 SSN，fees are paid to miners;
 * Confirmations: 10, pos maturity: 500;
 * Min stake age: 8 hours, no max age;
-* P2P port: 11201, RPC port: 11202;
+* Default port: P2P port: 11201, RPC port: 11202;
 
 
 Proof of work spec
