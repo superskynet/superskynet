@@ -23,8 +23,6 @@ Max height: no limit for one hundred years;
 
 superskynet development tree
 
-superskynet is a PoS-based cryptocurrency.
-
 Development process
 ===========================
 
